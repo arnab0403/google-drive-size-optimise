@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node --check index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
-    "@google-cloud/local-auth": "^3.0.1",
+    "express": "^5.3.0",
     "googleapis": "^189.0.0",
+    "morgan": "^1.12.1",
     "sharp": "^0.35.5"
   }
 }
